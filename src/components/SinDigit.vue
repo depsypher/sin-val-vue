@@ -36,7 +36,6 @@ function onInput(e: Event) {
 }
 
 function onSelect(e: Event) {
-  console.log("onselect");
   const element = (e?.currentTarget as HTMLInputElement);
   const nextInput = element.nextElementSibling as HTMLElement;
   if (nextInput.nodeName == "INPUT") {
