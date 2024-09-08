@@ -49,7 +49,7 @@ function onSelect(e: Event) {
 <template>
   <input type="text"
          inputmode="numeric"
-         class="input"
+         class="input input-bordered w-full max-w-xs"
          min="0"
          max="9"
          :value="value"
@@ -61,14 +61,15 @@ function onSelect(e: Event) {
 
 <style scoped>
 .input {
-  width: 1em;
-  height: 1.2em;
-  padding: 0.4em;
-  margin: 0.2em;
+  width: 1.7em !important;
+  height: 1.7em !important;
+  padding: 0 !important;
+  margin: 0.2em !important;
   text-align: center;
+  border: black solid 1px !important;
 }
 
 .input:nth-child(3n) {
-  margin-right: 1em;
+  margin-right: 0.6em !important;
 }
 </style>

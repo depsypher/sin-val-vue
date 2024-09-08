@@ -51,8 +51,11 @@ function onChange(index: number, value: string) {
         :value="value"
         :on-change="onChange"
     />
-    <div class="verification">
+    <div class="hidden md:block verification wide">
       {{valid ? "Valid SIN ✅" : "Invalid SIN ❌"}}
+    </div>
+    <div class="md:hidden verification">
+      {{valid ? "✅" : "❌"}}
     </div>
   </div>
 </template>
@@ -63,7 +66,10 @@ function onChange(index: number, value: string) {
   justify-content: center;
 }
 .verification {
-  width: 7rem;
+  text-wrap: nowrap;
   align-self: center;
+}
+.wide {
+  width: 7em;
 }
 </style>
