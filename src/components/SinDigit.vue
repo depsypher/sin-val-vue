@@ -52,6 +52,7 @@ function onSelect(e: Event) {
          class="input input-bordered w-full max-w-xs"
          min="0"
          max="9"
+         maxlength="1"
          :value="value"
          @keydown="onKeyDown($event)"
          @input="onInput($event)"
